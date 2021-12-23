@@ -1,0 +1,134 @@
+.video {
+  height: 706px;
+  background-color: $black-russian;
+  color: $white;
+  margin-bottom: 121px;
+}
+
+.video__content {
+  position: relative;
+  bottom: -121px;
+}
+
+.video__description {
+  max-width: 340px;
+  margin: 0 auto 54px auto;
+  opacity: 0.7;
+  line-height: 28px;
+  letter-spacing: -0.5%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.video__wrapper {
+  position: relative;
+  width: 100%;
+  height: 522px;
+  max-width: 929px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: $green;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    width: 9px;
+    height: 9px;
+    border: 9px solid transparent;
+    border-left: 15px solid $black;
+    transition: opacity 0.5s, border-color 0.5s;
+  }
+
+  &:hover {
+    background-color: #8ef3ea;
+
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    background-color: $green;
+
+    &::before {
+      border-left-color: $white;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .video {
+    height: 413px;
+    padding-left: 132px;
+    padding-right: 132px;
+    margin-bottom: 85px;
+  }
+
+  .video__title {
+    margin-bottom: 15px;
+  }
+
+  .video__content {
+    bottom: -64px;
+  }
+
+  .video__description {
+    max-width: 430px;
+    margin-bottom: 40px;
+  }
+
+  .video__wrapper {
+    height: 282px;
+  }
+
+  .video__button {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .video {
+    height: 384px;
+    padding: 0 15px;
+  }
+
+  .video__title {
+    letter-spacing: -0.1px;
+  }
+
+  .video__content {
+    bottom: -78px;
+  }
+
+  .video__description {
+    margin-bottom: 53px;
+  }
+
+  .video__wrapper {
+    height: 162px;
+  }
+
+  .video__button {
+    width: 65px;
+    height: 65px;
+  }
+}

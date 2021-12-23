@@ -1,0 +1,143 @@
+.main-nav {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 874px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-nav__link {
+  padding: 10px 23px 9px 19px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  color: $white;
+  opacity: 0.7;
+}
+
+.main-nav__toggle {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-color: $green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 1px;
+    background-color: $black;
+    box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(20, 21, 23, 0.2);
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(20, 21, 23, 0.2);
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav {
+    position: relative;
+    padding-top: 100px;
+    max-width: none;
+
+    &--closed {
+      padding-top: 0;
+      border-bottom: none;
+    }
+
+    &--opened {
+      position: fixed;
+      height: 100vh;
+      background-color: $white;
+    }
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+  }
+
+  .main-nav.main-nav--nojs {
+    padding-top: 0;
+  }
+
+  .main-nav__link {
+    position: relative;
+    min-height: 60px;
+    padding: 16px 35px 16px 16px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $black;
+    background-color: $white-smoke;
+
+    &::before {
+      position: absolute;
+      right: 26px;
+      top: calc(50% - 6px);
+      transform: rotate(-45deg);
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-right: 2px solid rgba(44, 46, 63, 0.5);
+      border-bottom: 2px solid rgba(44, 46, 63, 0.5);
+    }
+  }
+
+  .main-nav__toggle {
+    display: block;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+}
