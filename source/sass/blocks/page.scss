@@ -1,0 +1,17 @@
+.page {
+  font-family: "Open Sans", "Arial", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: $desktop-width;
+  min-width: 320px;
+
+  &--block {
+    overflow: hidden;
+  }
+}

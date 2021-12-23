@@ -1,34 +1,19 @@
-.page {
-  font-family: "Open Sans", "Arial", sans-serif;
-  box-sizing: border-box;
-}
-
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .list-unstyled {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.page__body {
-  position: relative;
-  margin: 0 auto;
-  min-height: 100vh;
-  max-width: $desktop-width;
-  min-width: 320px;
-  //outline: 2px solid green;
-  //outline-offset: -2px;
-
-  &--block {
-    overflow: hidden;
-  }
-}
-
-.page__title {
-  margin-top: 0;
 }
 
 img {
@@ -38,12 +23,6 @@ img {
 a {
   text-decoration: none;
 }
-
-//section {
-//  outline: 1px solid blue;
-//  outline-offset: -3px;
-//}
-
 .section-title {
   margin-top: 0;
   margin-bottom: 21px;
