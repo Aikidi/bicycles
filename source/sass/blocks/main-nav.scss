@@ -24,6 +24,14 @@
   letter-spacing: -0.1px;
   color: $white;
   opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .main-nav__toggle {
@@ -49,6 +57,17 @@
     height: 1px;
     background-color: $black;
     box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+  }
+
+  &:hover {
+    background-color: $turquoise-blue;
+  }
+
+  &:active {
+    &::before {
+      background-color: $white;
+      box-shadow: 0 6px 0 0 $white, 0 12px 0 0 $white;
+    }
   }
 }
 
@@ -76,6 +95,20 @@
     height: 1px;
     background-color: rgba(20, 21, 23, 0.2);
     transform: rotate(-45deg);
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      background-color: rgba(20, 21, 23, 0.6);
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      background-color: rgba(20, 21, 23, 0.9);
+    }
   }
 }
 
