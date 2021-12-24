@@ -32,17 +32,3 @@ for (let link of navlinks) {
     closeMenu();
   })
 }
-
-// const form = document.querySelector('form');
-// const formPhone = document.querySelector('#phone');
-//
-// form.addEventListener('change', function () {
-//   form.setCustomValidity('');
-//   let phoneNumber = formPhone.value;
-//   let phoneRegExp = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
-//   var isphone = phoneRegExp.test(phoneNumber);
-//   if (!isphone){
-//     form.setCustomValidity('Not valid');
-//   };
-//   form.reportValidity();
-// });
