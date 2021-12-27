@@ -10,7 +10,7 @@
   bottom: -121px;
 }
 
-.video__description {
+.video p {
   max-width: 340px;
   margin: 0 auto 54px auto;
   opacity: 0.7;
@@ -96,7 +96,7 @@
     bottom: -64px;
   }
 
-  .video__description {
+  .video p {
     max-width: 430px;
     margin-bottom: 40px;
   }
@@ -111,7 +111,7 @@
 
     &::before {
       border: 12px solid transparent;
-      border-left: 18px solid #000;
+      border-left: 18px solid $black;
     }
   }
 }
@@ -130,7 +130,7 @@
     bottom: -78px;
   }
 
-  .video__description {
+  .video p {
     margin-bottom: 53px;
   }
 

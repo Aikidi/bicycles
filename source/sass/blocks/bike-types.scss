@@ -31,13 +31,13 @@
   .bike-types__img {
     height: 503px;
 
-    &:before {
+    &::before {
       position: absolute;
       z-index: 0;
       content: "";
       bottom: 0;
       left: 0;
-      transform: translate(-33%,-92%);
+      transform: translate(-33%, -92%);
       width: 180px;
       height: 180px;
       border: 27px solid $green;
@@ -52,8 +52,8 @@
   .bike-types__img {
     height: 566px;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       position: absolute;
       z-index: 2;
       content: "";
@@ -62,14 +62,13 @@
       border: 8px solid $green;
     }
 
-    &:before {
+    &::before {
       top: 0;
       left: 0;
       transform: translate(-40%, -38%);
-
     }
 
-    &:after {
+    &::after {
       bottom: 0;
       right: 0;
       transform: translate(50%, 49%);
@@ -81,13 +80,13 @@
   .bike-types__img {
     height: 513px;
 
-    &:before {
+    &::before {
       position: absolute;
       z-index: 2;
       content: "";
       top: 0;
       right: 0;
-      transform: translate(38%,-33%);
+      transform: translate(38%, -33%);
       width: 95px;
       height: 95px;
       border: 17px solid $green;
@@ -119,8 +118,8 @@
 @media (max-width: $tablet-width) {
   .bike-types__item:nth-child(3n+1) {
     .bike-types__img {
-      &:before {
-        transform: translate(-29%,21%);
+      &::before {
+        transform: translate(-29%, 21%);
         width: 127px;
         height: 127px;
         border-width: 18px;
@@ -139,8 +138,8 @@
 
   .bike-types__item:nth-child(3n+3) {
     .bike-types__img {
-      &:before {
-        transform: translate(38%,-30%);
+      &::before {
+        transform: translate(38%, -30%);
         width: 68px;
         height: 68px;
         border-width: 13px;
@@ -190,7 +189,7 @@
 @media (max-width: $mobile-width) {
   .bike-types__item:nth-child(3n+1) {
     .bike-types__img {
-      &:before {
+      &::before {
         transform: translate(-20%, 22%);
       }
     }
@@ -198,7 +197,7 @@
 
   .bike-types__item:nth-child(3n+3) {
     .bike-types__img {
-      &:before {
+      &::before {
         transform: translate(20%, -30%);
       }
     }
@@ -213,6 +212,7 @@
     align-items: center;
     grid-gap: 42px;
   }
+
   .bike-types__item {
     max-width: 270px;
   }

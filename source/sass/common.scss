@@ -1,5 +1,25 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
+}
+
+html {
+  font-family: "Open Sans", "Arial", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: $desktop-width;
+  min-width: 320px;
+}
+
+.block {
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -23,6 +43,7 @@ img {
 a {
   text-decoration: none;
 }
+
 .section-title {
   margin-top: 0;
   margin-bottom: 21px;

@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ведосипеды Moon</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/open-sans-v27-latin_cyrillic-300.woff" as="font">
     <link rel="preload" href="fonts/open-sans-v27-latin_cyrillic-300.woff2" as="font">
-    <link rel="preload" href="fonts/open-sans-v27-latin_cyrillic-600.woff" as="font">
     <link rel="preload" href="fonts/open-sans-v27-latin_cyrillic-600.woff2" as="font">
-    <link rel="preload" href="fonts/open-sans-v27-latin_cyrillic-700.woff" as="font">
     <link rel="preload" href="fonts/open-sans-v27-latin_cyrillic-700.woff2" as="font">
-    <link rel="preload" href="fonts/open-sans-v27-latin_cyrillic-regular.woff" as="font">
     <link rel="preload" href="fonts/open-sans-v27-latin_cyrillic-regular.woff2" as="font">
   </head>
-  <body class="page__body">
+  <body>
     <header class="header">
       <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button"></button>
@@ -33,16 +29,18 @@
               <img src="img/logo.svg" width="71" height="21" alt="Логотип">
             </a>
             <h1 class="visually-hidden ">Ведосипеды Moon</h1>
-            <p class="header__title">Мы продаем велосипеды</p>
-            <p class="header__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            <span>Мы продаем велосипеды</span>
+            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           </div>
         </div>
       </div>
       <div class="header__form form">
         <form action="https://echo.htmlacademy.ru" autocomplete="off">
           <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <input placeholder="Введите Ваше Имя" name="name" required>
-          <input placeholder="Введите Ваш номер телефона" type="tel" id="phone" name="phone" required>
+          <label for="name" class="visually-hidden">Введите Ваше Имя</label>
+          <input placeholder="Введите Ваше Имя" name="name" id="name" required>
+          <label for="phone" class="visually-hidden">Введите Ваш номер телефона</label>
+          <input placeholder="Введите Ваш номер телефона" type="tel" name="phone" id="phone" required>
           <button type="submit">Подобрать велосипед мечты</button>
         </form>
       </div>
@@ -51,20 +49,20 @@
       <h2 class="section-title facts__title">Несколько фактов о нас</h2>
       <ul class="facts__list list-unstyled">
         <li class="facts__item">
-          <p class="facts__item-number">01</p>
-          <p class="facts__item-text">Самый широкий выбор велосипедов!</p>
+          <span>01</span>
+          <p>Самый широкий выбор велосипедов!</p>
         </li>
         <li class="facts__item">
-          <p class="facts__item-number">02</p>
-          <p class="facts__item-text">Доставка велосипедов по всей России!</p>
+          <span>02</span>
+          <p>Доставка велосипедов по всей России!</p>
         </li>
         <li class="facts__item">
-          <p class="facts__item-number">03</p>
-          <p class="facts__item-text">Большой выбор крутых аксессуаров!</p>
+          <span>03</span>
+          <p>Большой выбор крутых аксессуаров!</p>
         </li>
         <li class="facts__item">
-          <p class="facts__item-number">04</p>
-          <p class="facts__item-text">Профессиональные консультации!</p>
+          <span>04</span>
+          <p>Профессиональные консультации!</p>
         </li>
       </ul>
     </section>
@@ -76,7 +74,7 @@
             <picture>
               <source type="image/webp" srcset="img/bike-1@1x.webp 1x, img/bike-1@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/bike-1@1x.jpg" srcset="img/bike-1@2x.jpg 2x" alt="Дорожный велосипед" width="342">
+              <img src="img/bike-1@1x.jpg" srcset="img/bike-1@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
             </picture>
           </div>
           <p class="bike-types__item-title">Дорожный велосипед</p>
@@ -86,7 +84,7 @@
             <picture>
               <source type="image/webp" srcset="img/bike-2@1x.webp 1x, img/bike-2@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/bike-2@1x.jpg" srcset="img/bike-2@2x.jpg 2x" alt="Горный велосипед" width="342">
+              <img src="img/bike-2@1x.jpg" srcset="img/bike-2@2x.jpg 2x" alt="Горный велосипед" width="342" height="566">
             </picture>
           </div>
           <p class="bike-types__item-title">Горный велосипед</p>
@@ -96,7 +94,7 @@
             <picture>
               <source type="image/webp" srcset="img/bike-3@1x.webp 1x, img/bike-3@2x.webp 2x">
               <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/bike-3@1x.jpg" srcset="img/bike-3@2x.jpg 2x" alt="Детский велосипед" width="342">
+              <img src="img/bike-3@1x.jpg" srcset="img/bike-3@2x.jpg 2x" alt="Детский велосипед" width="342" height="512">
             </picture>
           </div>
           <p class="bike-types__item-title">Детский велосипед</p>
@@ -106,13 +104,12 @@
     <section class="video" id="video">
       <div class="video__content">
         <h2 class="section-title video__title">Видео про велосипеды</h2>
-        <p class="video__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
         <div class="video__wrapper">
           <picture>
             <source type="image/webp" srcset="img/video@1x.webp 1x, img/video@2x.webp 2x">
             <!-- 1х: 929px; 2x: 1858px -->
-            <img src="img/video@1x.jpg" srcset="img/video@2x.jpg 2x" alt="Видео про велосипеды
-" width="929" height="522">
+            <img src="img/video@1x.jpg" srcset="img/video@2x.jpg 2x" alt="Видео про велосипеды" width="929" height="522">
           </picture>
           <button class="video__button" type="button" aria-label="включить видео"></button>
         </div>
@@ -133,6 +130,6 @@
         <a class="info__contacts-item info__contacts-item--phone" href="tel:849978468446">+7 (499) -784-684-46</a>
       </div>
     </section>
-    <script src="js/script.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

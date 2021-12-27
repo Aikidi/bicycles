@@ -15,7 +15,8 @@
   padding: 28px 0;
 }
 
-.facts__item-number {
+.facts__item span {
+  display: block;
   margin-top: 0;
   margin-bottom: 15px;
   text-align: center;
@@ -26,7 +27,7 @@
   color: $green;
 }
 
-.facts__item-text {
+.facts__item p {
   margin-top: 0;
   text-align: center;
   font-size: 22px;
@@ -67,11 +68,11 @@
     padding-bottom: 15px;
   }
 
-  .facts__item-number {
+  .facts__item span {
     margin-bottom: 10px;
   }
 
-  .facts__item-text {
+  .facts__item p {
     font-size: 18px;
   }
 }
