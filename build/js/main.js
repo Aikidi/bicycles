@@ -57,7 +57,7 @@ const nameField = document.querySelector('#name');
 const isNameValid = () => {
   nameField.setCustomValidity('');
   let nameValue = nameField.value;
-  let nameRegExp = /^[A-Za-z -]+$/;
+  let nameRegExp = /^[А-Яа-яA-Za-z -]+$/;
   let isname = nameRegExp.test(nameValue);
   if (!isname && (nameField.value.length > 1)) {
     nameField.setCustomValidity('Недопустимый символ');
