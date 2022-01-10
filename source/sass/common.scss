@@ -16,6 +16,8 @@ body {
   min-height: 100vh;
   max-width: $desktop-width;
   min-width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .block {

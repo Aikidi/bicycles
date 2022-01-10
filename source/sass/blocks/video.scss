@@ -1,5 +1,5 @@
 .video {
-  height: 706px;
+  min-height: 706px;
   background-color: $black-russian;
   color: $white;
   margin-bottom: 121px;
@@ -82,7 +82,7 @@
 
 @media (max-width: $tablet-width) {
   .video {
-    height: 413px;
+    min-height: 413px;
     padding-left: 132px;
     padding-right: 132px;
     margin-bottom: 85px;
@@ -118,7 +118,7 @@
 
 @media (max-width: $mobile-width) {
   .video {
-    height: 384px;
+    min-height: 384px;
     padding: 0 15px;
   }
 
@@ -136,6 +136,7 @@
 
   .video__wrapper {
     height: 162px;
+    max-width: 288px;
   }
 
   .video__button {

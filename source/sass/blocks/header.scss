@@ -17,10 +17,10 @@
 }
 
 .header__content-wrapper {
-  position: absolute;
-  bottom: 240px;
-  left: 50%;
-  transform: translateX(-50%);
+  //position: absolute;
+  //bottom: 240px;
+  //left: 50%;
+  //transform: translateX(-50%);
   width: 100%;
   max-width: 879px;
   margin: auto;
@@ -30,6 +30,7 @@
 
 .header__main {
   max-width: 390px;
+  margin-top: 318px;
 }
 
 .header__logo {
@@ -39,7 +40,7 @@
 
 .header__form {
   position: absolute;
-  bottom: 240px;
+  top: 322px;
   max-width: 326px;
   right: calc(50% - 879px / 2);
 }
@@ -65,7 +66,6 @@
   opacity: 0.8;
   letter-spacing: -0.1px;
 }
-
 
 @media (max-width: $tablet-width) {
   .header__logo {
@@ -94,6 +94,7 @@
   .header__main {
     text-align: center;
     max-width: 485px;
+    margin-top: 0;
   }
 
   .header__main span {
@@ -123,6 +124,10 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/header-bkg-m@2x.jpg");
     }
+  }
+
+  .header__form {
+    max-width: 100%;
   }
 
   .header__logo {
